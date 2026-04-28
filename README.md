@@ -2,7 +2,7 @@
 
 Marketing site for **Nibble**, the calorie + macro tracker that lets you log food in plain English. Type `"2 idlis and a coffee"` — Gemini parses it into structured entries with kcal + macros.
 
-→ Try it: [occasionaly-b8731.web.app](https://occasionaly-b8731.web.app)
+→ Try it: <http://nibble.occasionaly.in/>
 
 ## Stack
 

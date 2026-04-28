@@ -18,12 +18,12 @@ body,
 
 body {
   margin: 0;
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
   color: #0b1020;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "ss01", "cv11";
 }
 
 /* Subtle film grain — sits over big color blobs to keep them feeling tactile. */

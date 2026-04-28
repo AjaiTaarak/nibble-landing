@@ -132,7 +132,7 @@ export default function DemoCard() {
                   <div className="text-xs text-nibble-ink/55 font-medium">
                     today, apr 28
                   </div>
-                  <div className="text-lg font-black text-nibble-ink">
+                  <div className="text-lg font-extrabold text-nibble-ink">
                     Hey Adam 👋
                   </div>
                 </div>

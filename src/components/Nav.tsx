@@ -24,14 +24,15 @@ export default function Nav() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-5 md:px-8 h-16 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 font-black text-nibble-ink">
-          <span
-            aria-hidden
-            className="grid place-items-center w-8 h-8 rounded-xl bg-gradient-to-br from-nibble-pink to-nibble-indigo text-nibble-cream font-black"
-          >
-            N
-          </span>
-          <span className="text-lg tracking-tight">nibble</span>
+        <a href="#top" className="flex items-center gap-2 font-extrabold text-nibble-ink">
+          <img
+            src="/nibble_no_bg.png"
+            alt="Nibble"
+            width={36}
+            height={36}
+            className="w-9 h-9 object-contain"
+          />
+          <span className="text-xl tracking-tight">Nibble</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-nibble-ink/70">
@@ -52,10 +53,10 @@ export default function Nav() {
             7 day streak
           </span>
           <a
-            href="https://occasionaly-b8731.web.app"
+            href="http://nibble.occasionaly.in/"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center h-9 px-4 rounded-full bg-nibble-ink text-nibble-cream text-sm font-semibold hover:bg-nibble-ink/90 transition-colors"
+            className="inline-flex items-center h-9 px-4 rounded-full bg-nibble-ink text-nibble-cream text-sm font-bold hover:bg-nibble-pinkDeep transition-colors"
           >
             open app
           </a>

@@ -26,7 +26,7 @@ export default function FinalCTA() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://occasionaly-b8731.web.app"
+              href="http://nibble.occasionaly.in/"
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center justify-center gap-2 h-13 px-7 py-4 rounded-full bg-nibble-ink text-nibble-cream font-bold hover:bg-black transition-colors"

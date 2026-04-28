@@ -101,23 +101,23 @@ export default function Features() {
           {/* Personalized targets */}
           <motion.div
             variants={fadeUp}
-            className="row-span-2 rounded-3xl bg-white border border-nibble-ink/5 p-6 shadow-soft relative overflow-hidden"
+            className="row-span-2 rounded-3xl bg-white border border-nibble-ink/5 p-6 shadow-soft relative overflow-hidden flex flex-col"
           >
             <Icon tone="indigo">
               <Target size={20} />
             </Icon>
-            <h3 className="mt-5 text-2xl font-black leading-tight text-nibble-ink">
+            <h3 className="mt-5 text-2xl font-extrabold leading-tight text-nibble-ink">
               Targets, dialed in.
             </h3>
-            <p className="mt-2 text-nibble-ink/65 text-sm leading-relaxed">
-              2–3 onboarding questions → Mifflin-St Jeor BMR, sedentary
-              multiplier, ±250/500/750 kcal for pace, 30/40/30 macros.
+            <p className="mt-2 text-nibble-ink/65 text-sm leading-relaxed font-medium">
+              Onboarding sets your kcal target. Mifflin-St Jeor BMR, sedentary multiplier, ±250/500/750 for pace, 30/40/30 macros.
             </p>
-            <div className="mt-5 grid grid-cols-3 gap-2 text-center">
-              <Macro label="P" v="30%" tone="pink" />
-              <Macro label="C" v="40%" tone="indigo" />
-              <Macro label="F" v="30%" tone="ink" />
-            </div>
+            <img
+              src="/onboarding_2.png"
+              alt="Balancing food intake and exercise — a salad with +450 cal and a dumbbell with -300"
+              className="mt-3 w-full h-auto object-contain select-none pointer-events-none"
+              draggable={false}
+            />
           </motion.div>
 
           {/* Daily home */}
@@ -163,12 +163,20 @@ export default function Features() {
               <Icon tone="pinkDark">
                 <Zap size={20} />
               </Icon>
-              <h3 className="mt-3 text-lg font-black leading-tight">
+              <h3 className="mt-3 text-lg font-extrabold leading-tight">
                 Streaks ⚡ + dots
               </h3>
-              <p className="mt-1 text-xs text-nibble-cream/70">
+              <p className="mt-1 text-xs text-nibble-cream/70 font-medium">
                 Lightning chip counts logged days. Calendar dots for proof.
               </p>
+              <div className="absolute bottom-0 right-0 w-24 h-24 opacity-90">
+                <img
+                  src="/onboarding_3.png"
+                  alt=""
+                  className="w-full h-full object-contain object-bottom-right select-none pointer-events-none"
+                  draggable={false}
+                />
+              </div>
             </div>
           </motion.div>
 
@@ -229,30 +237,6 @@ function Icon({
     >
       {children}
     </span>
-  );
-}
-
-function Macro({
-  label,
-  v,
-  tone,
-}: {
-  label: string;
-  v: string;
-  tone: "pink" | "indigo" | "ink";
-}) {
-  const map = {
-    pink: "bg-nibble-blush text-nibble-pinkDeep",
-    indigo: "bg-nibble-indigo/10 text-nibble-indigoDeep",
-    ink: "bg-nibble-ink/5 text-nibble-ink/80",
-  } as const;
-  return (
-    <div className={`rounded-xl py-2 ${map[tone]}`}>
-      <div className="text-[10px] font-bold uppercase tracking-wider opacity-70">
-        {label}
-      </div>
-      <div className="font-black text-sm">{v}</div>
-    </div>
   );
 }
 
